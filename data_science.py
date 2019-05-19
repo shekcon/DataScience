@@ -187,7 +187,14 @@ def write_frag_csv_file(log_file_pathname, frags):
         writer.writerows(frags)
 
 
+def insert_match_to_sqlite(file_pathname, start_time, end_time, game_mode, map_name, frags):
+    pass
+
+
 if __name__ == "__main__":
     log_data = read_log_file('./logs/log04.txt')
+    log_start_time = parse_log_start_time(log_data)
     frags = parse_frags(log_data)
-    write_frag_csv_file('./logs/log04.csv', frags)
+    game_mode, map_name = parse_match_mode_and_map(log_file_data)
+    start_time, end_time = parse_game_session_start_and_end_times(log_data)
+    insert_match_to_sqlite('./farcry.db', start_time, end_time, game_mode, map_name, frags)
