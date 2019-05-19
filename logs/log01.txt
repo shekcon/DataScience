@@ -747,7 +747,7 @@ Script System Initialization
 <22:09> WARNING: Connectivity warning: there are 1 open edges (3550 closed, 2367 faces, 0 planes, 0 vertices)
 <22:54> <Lua> cyap killed cynthia with M4
 <23:55> <Lua> cyap killed Jack The Ripper with VehicleRocket
-<24:48> <Lua> cynthia killed cyap with MG
+<24:48> <Lua> cynthia killed cyap with M4
 <25:06> <Lua> cyap killed cynthia with M4
 <25:27> <Lua> cyap killed cynthia with M4
 <25:38> <Lua> cyap killed Jack The Ripper with Machete
