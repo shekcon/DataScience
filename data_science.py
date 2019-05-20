@@ -2,6 +2,7 @@
 from datetime import datetime, timedelta, timezone
 from re import findall, split
 import csv
+import sqlite3
 
 
 def read_log_file(log_file_pathname):
@@ -188,13 +189,62 @@ def write_frag_csv_file(log_file_pathname, frags):
 
 
 def insert_match_to_sqlite(file_pathname, start_time, end_time, game_mode, map_name, frags):
-    pass
+    """ 
+    Task:
+        - Create connection with database
+        - Excute sql command insert info of match into database
+        - Return last row id
+    :param file_pathname: database file
+    :param start_time: game start time
+    :param end_time: game end time
+    :param game_mode: mode of game
+    :param map_name: name of map
+    :param frags: information frags history
+    :return: last row id or None
+    """
+    conn = create_connection(file_pathname)
+    with conn:
+        c = conn.cursor()
+        sql = "INSERT INTO match(start_time, end_time, game_mode, map_name) VALUES(?,?,?,?);"
+        match = (start_time, end_time, game_mode, map_name)
+        c.execute(sql, match)
+        lastrowid = c.lastrowid
+        insert_frags_to_sqlite(conn, lastrowid, frags)
+    return lastrowid
+
+
+def create_connection(db_file):
+    """ create a database connection to the SQLite database
+        specified by db_file
+    :param db_file: database file
+    :return: Connection object or None
+    """
+    try:
+        conn = sqlite3.connect(db_file)
+        return conn
+    except Error as e:
+        print(e)
+    return None
+
+
+def insert_frags_to_sqlite(connection, match_id, frags):
+    c = connection.cursor()
+    for frag in frags:
+        sql_killer_victim = "INSERT INTO match_frag(match_id, frag_time, killer_name, victim_name, weapon_code) VALUES(%s,?,?,?,?);" % (
+            match_id)
+        sql_suicide = "INSERT INTO match_frag(match_id,frag_time, killer_name) VALUES(%s,?,?);" % (
+            match_id)
+        if len(frag) > 2:
+            c.execute(sql_killer_victim, frag)
+        else:
+            c.execute(sql_suicide, frag)
 
 
 if __name__ == "__main__":
     log_data = read_log_file('./logs/log04.txt')
     log_start_time = parse_log_start_time(log_data)
     frags = parse_frags(log_data)
-    game_mode, map_name = parse_match_mode_and_map(log_file_data)
+    game_mode, map_name = parse_session_mode_and_map(log_data)
     start_time, end_time = parse_game_session_start_and_end_times(log_data)
-    insert_match_to_sqlite('./farcry.db', start_time, end_time, game_mode, map_name, frags)
+    insert_match_to_sqlite('./db/farcry', start_time,
+                           end_time, game_mode, map_name, frags)
