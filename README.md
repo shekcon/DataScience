@@ -14,7 +14,7 @@ Players can join an online multiplayer session by connecting to a Far Cry server
 
 When the limited period of time expires, the game stops and it displays the results of the match as an ordered leaderboard with the number of kills and deaths per player, and the efficiency of each player:
 
-![Multiplayer Match Session Leaderboard](farcry_multiplayer-match-session-leaderboard.jpg)
+![Multiplayer Match Session Leaderboard](assets/farcry_multiplayer-match-session-leaderboard.jpg)
 
 ## Weapons
 
@@ -22,25 +22,25 @@ Players have access to a large arsenal of real-world weapons in Far Cry, from gr
 
 | Name                                              | Code                                                  | Photo                                              |
 | ------------------------------------------------- | ----------------------------------------------------- | -------------------------------------------------- |
-| Machete                                           | `Machete`                                             | ![](farcry_weapon_machete.png)                     |
-| Jungle Falcon                                     | `Falcon`                                              | ![](farcry_weapon_jungle-falcon.png)               |
-| Jackhammer Shotgun                                | `Shotgun`                                             | ![](farcry_weapon_jackhammer-shotgun.png)          |
-| P90 SMG                                           | `P90`                                                 | ![](farcry_weapon_p90-smg.png)                     |
-| MP5 SMG                                           | `MP5`                                                 | ![](farcry_weapon_mp5-smg.png)                     |
-| M4 Carbine                                        | `M4`                                                  | ![](farcry_weapon_m4-carbine.png)                  |
-| AG36 Assault Rifle                                | `AG36` for the rifle, `AG36Grenade` for the explosive | ![](farcry_weapon_ag36-assault-rifle.png)          |
-| OICW Advanced Assault Rifle                       | `OICW` for the rifle, `OICWGrenade` for the explosive | ![](farcry_weapon_oicw-advanced-assault-rifle.png) |
-| AW50 Sniper Rifle                                 | `SniperRifle`                                         | ![](farcry_weapon_aw50-sniper-rifle.png)           |
-| M249 SAW MG                                       | `M249`                                                | ![](farcry_weapon_m249-saw-mg.png)                 |
-| Rocket Launcher                                   | `Rocket`                                              | ![](farcry_weapon_rocket-launcher.png)             |
-| Grenade                                           | `HandGrenade`                                         | ![](farcry_weapon_grenade-mk2.jpg)                 |
-| Mk.19 Mounted Mortar Launcher Platform            | `StickyExplosive`                                     | ![](farcry_weapon_mortar.jpg)                      |
-| Patrol Boat (when a player runs over another)     | `Boat`                                                | ![](farcry_vehicle_patrol-boat.jpg)                |
-| Humvee or Buggy (when a player runs over another) | `Vehicle`                                             | ![](farcry_vehicle_buggy.png)                      |
-| Rocket Launcher mounted on a vehicle              | `VehicleMountedRocketMG`                              | ![](farcry_vehicle_humvee.png)                     |
-| Mounted Minigun                                   | `VehicleMountedAutoMG`, `MG`                          | ![](farcry_weapon_vulcan-minigun.jpg)              |
-| Machine Gun mounted on a vehicle                  | `VehicleMountedMG`                                    | ![](farcry_vehicle_buggy.png)                      |
-| Rocket Launcher mounted on a vehicle              | `VehicleRocket`                                       | ![](farcry_vehicle_humvee.png)                     |
+| Machete                                           | `Machete`                                             | ![](assets/farcry_weapon_machete.png)                     |
+| Jungle Falcon                                     | `Falcon`                                              | ![](assets/farcry_weapon_jungle-falcon.png)               |
+| Jackhammer Shotgun                                | `Shotgun`                                             | ![](assets/farcry_weapon_jackhammer-shotgun.png)          |
+| P90 SMG                                           | `P90`                                                 | ![](assets/farcry_weapon_p90-smg.png)                     |
+| MP5 SMG                                           | `MP5`                                                 | ![](assets/farcry_weapon_mp5-smg.png)                     |
+| M4 Carbine                                        | `M4`                                                  | ![](assets/farcry_weapon_m4-carbine.png)                  |
+| AG36 Assault Rifle                                | `AG36` for the rifle, `AG36Grenade` for the explosive | ![](assets/farcry_weapon_ag36-assault-rifle.png)          |
+| OICW Advanced Assault Rifle                       | `OICW` for the rifle, `OICWGrenade` for the explosive | ![](assets/farcry_weapon_oicw-advanced-assault-rifle.png) |
+| AW50 Sniper Rifle                                 | `SniperRifle`                                         | ![](assets/farcry_weapon_aw50-sniper-rifle.png)           |
+| M249 SAW MG                                       | `M249`                                                | ![](assets/farcry_weapon_m249-saw-mg.png)                 |
+| Rocket Launcher                                   | `Rocket`                                              | ![](assets/farcry_weapon_rocket-launcher.png)             |
+| Grenade                                           | `HandGrenade`                                         | ![](assets/farcry_weapon_grenade-mk2.jpg)                 |
+| Mk.19 Mounted Mortar Launcher Platform            | `StickyExplosive`                                     | ![](assets/farcry_weapon_mortar.jpg)                      |
+| Patrol Boat (when a player runs over another)     | `Boat`                                                | ![](assets/farcry_vehicle_patrol-boat.jpg)                |
+| Humvee or Buggy (when a player runs over another) | `Vehicle`                                             | ![](assets/farcry_vehicle_buggy.png)                      |
+| Rocket Launcher mounted on a vehicle              | `VehicleMountedRocketMG`                              | ![](assets/farcry_vehicle_humvee.png)                     |
+| Mounted Minigun                                   | `VehicleMountedAutoMG`, `MG`                          | ![](assets/farcry_weapon_vulcan-minigun.jpg)              |
+| Machine Gun mounted on a vehicle                  | `VehicleMountedMG`                                    | ![](assets/farcry_vehicle_buggy.png)                      |
+| Rocket Launcher mounted on a vehicle              | `VehicleRocket`                                       | ![](assets/farcry_vehicle_humvee.png)                     |
 
 _Note: AG36 Assault Rifle and OICW Advanced Assault Rifle weapons have two fire modes: automatic rifle and grenade launcher._
 
@@ -88,7 +88,7 @@ _Note: Players who joined a match but who hid during all the match, meaning they
 
 You can download [Far Cry 1.34 on Windows](https://drive.google.com/file/d/1pQ5RFuQ3t669KXd_jV-2KoOONdT6NcY8/view?usp=sharing), [unzip](https://www.7-zip.org/) the archive on the disk of your computer, and run the executable `./Bin32/FarCry.exe`.
 
-![](farcry_wallpaper_00.jpg)
+![](assets/farcry_wallpaper_00.jpg)
 
 # Waypoint 1: Read Game Session Log File
 
@@ -130,7 +130,7 @@ _Note 2: The method [`isoformat`](https://docs.python.org/3/library/datetime.htm
 
 # Waypoint 3: Parse Far Cry Engine's Start Time with Time Zone
 
-![World Time Zones Map](world-time-zones-map.png)
+![World Time Zones Map](assets/world-time-zones-map.png)
 
 However, even the time `November 09, 2018 12:22:07` is a relative time. It is relative to the place (a location) on Earth where the related event occurred. We call this time a [local time](https://www.dictionary.com/browse/local-time).
 
@@ -403,7 +403,7 @@ A game session starts when the user selects the game mode and the map to play on
 
 | Launch Game Session                 | Load Map                                 |
 | ----------------------------------- | ---------------------------------------- |
-| ![](farcry_game_session_launch.png) | ![](farcry_game_session_map_loading.png) |
+| ![](assets/farcry_game_session_launch.png) | ![](assets/farcry_game_session_map_loading.png) |
 
 _Hint: in the Far Cry log's file, you will information that indicates the time it took to load the map. That's a fairly good indication that the map has been loaded... :)_
 
@@ -526,7 +526,7 @@ _Note: You MUST use the Python module [csv](https://docs.python.org/3/library/cs
 
 ---
 
-![](farcry_wallpaper_01.jpg)
+![](assets/farcry_wallpaper_01.jpg)
 
 # Waypoint 10: Import CSV File into Google Sheets
 
@@ -538,7 +538,7 @@ _Note: If you have no idea how to create a Google spreadsheet, well... just **go
 
 Import the CSV file of Far Cry frags that you have generated into your Google Sheets document. For example:
 
-![Far Cry Frag History Spreadsheet](farcry_frag-history_spreadsheet.png)
+![Far Cry Frag History Spreadsheet](assets/farcry_frag-history_spreadsheet.png)
 
 At this stage, you should definitely watch a few [online tutorials](https://www.youtube.com/watch?v=wQfApf3eci8&list=PLv9Pf9aNgemt61gjKQaYZHjvZlVp4OANq) about Google Sheets to understand the basic principles of rows, columns, cells, [relative and absolute cell references](https://edu.gcfglobal.org/en/googlespreadsheets/types-of-cell-references/1/), formulas, etc. You will find a lot of online resources and, indeed, the [Google Sheets Help Center](https://support.google.com/docs/topic/9054603?ref_topic=1382883) from Google itself!
 
@@ -548,7 +548,7 @@ We want to determine the list of distinct players who participated in the game s
 
 First, we need to collect player names from each frag, remove any duplicate names (only keeping a list of distinct player names), and sort this list in alphabetical order:
 
-![Google Sheets Distinct Players](farcry_google_sheets_distinct_players.jpg)
+![Google Sheets Distinct Players](assets/farcry_google_sheets_distinct_players.jpg)
 
 Write a formula that places the distinct name of players in alphabetical order in the column `F` starting with the cell `F1`.
 
@@ -558,7 +558,7 @@ You can do that with a subtle combination of [arrays](https://support.google.com
 
 _Hint: When you begin experimenting with Google Sheets array, you may face some issue, especially if you try to provide the most generic expression possible:_
 
-![Google Sheets Row Expansion Issue](farcry_google_sheets_array_issue.png)
+![Google Sheets Row Expansion Issue](assets/farcry_google_sheets_array_issue.png)
 
 _In such cases, you might want to use the function [`FILTER`](https://support.google.com/docs/answer/3093197) in coordination with the function [`ISBLANK`](https://support.google.com/docs/answer/3093290). Up to you! ;)_
 
@@ -571,7 +571,7 @@ We want to calculate the following match statistics:
 - Number of times a player killed himself (what were you thinking?);
 - Player efficiency.
 
-![Far Cry Match Statistics](farcry_google_sheets_match_statistics.png)
+![Far Cry Match Statistics](assets/farcry_google_sheets_match_statistics.png)
 
 1. Write a formula in column `G`'s cells to calculate the number of times the player (defined in the corresponding column `F`'s cell of the same row) killed another.
 
@@ -587,7 +587,7 @@ The problem with our current sheet is that it combines both frag history and mat
 
 When we want to import the frag history of another match, we need to replace the current sheet with the data of the CSV file we are importing:
 
-![CSV File Import](farcry_google_sheets_import_csv_file.png)
+![CSV File Import](assets/farcry_google_sheets_import_csv_file.png)
 
 We cannot use the option _Replace data at selected cell_, choosing the cell of the first column/row of our sheet, because this option keeps data of a previous imported CSV file that is longer than the CSV file we are importing. We need to replace all the data of the previous imported frag history.
 
@@ -613,13 +613,13 @@ We need to create another sheet in our Google Sheets document and recreate these
 
 _Note: We consider that there is a maximum of 16 players who can join a match or the game would start lagging._
 
-![Far Cry Match Statistics Sheet](farcry_google_sheets_match_statistics_sheet_01.png)
+![Far Cry Match Statistics Sheet](assets/farcry_google_sheets_match_statistics_sheet_01.png)
 
 You can now import another Far Cry frag history CSV file into the sheet `Frag History`. The match statistics defined in the sheet `Match Statistics` will be automatically updated. Great!
 
 | Frag History                                        | Match Statistics                                        |
 | --------------------------------------------------- | ------------------------------------------------------- |
-| ![](farcry_google_sheets_frag_history_sheet_02.png) | ![](farcry_google_sheets_match_statistics_sheet_02.png) |
+| ![](assets/farcry_google_sheets_frag_history_sheet_02.png) | ![](assets/farcry_google_sheets_match_statistics_sheet_02.png) |
 
 We can say that the sheet `Match Statistics` is a _view_ over the sheet `Frag History`. The data of the sheet `Match Statistics` is dynamically calculated from the sheet `Frag History`'s data. We will see this with relational databases later in this mission.
 
@@ -629,11 +629,11 @@ Update the sheet `Match Statistics` to include the total number of kills, deaths
 
 For example:
 
-![Far Cry Match Overall Statistics](farcry_google_sheets_match_statistics_sheet_03.png)
+![Far Cry Match Overall Statistics](assets/farcry_google_sheets_match_statistics_sheet_03.png)
 
 ---
 
-![](farcry_wallpaper_02.jpg)
+![](assets/farcry_wallpaper_02.jpg)
 
 # Waypoint 15: Design a First Naive Data Model
 
@@ -671,7 +671,7 @@ This enables you to select (at a later stage) an RDBMS into which the data model
 
 To translate Google sheets into entities is damn simple. The sheets `Frag History` and `Match Statistics` can be converted into two entities `match_frag` and `match_statistics`:
 
-![Far Cry Entity Diagram Design](farcry_erd_initial.png)
+![Far Cry Entity Diagram Design](assets/farcry_erd_initial.png)
 
 There are many [data modeling tools](https://en.wikipedia.org/wiki/Comparison_of_data_modeling_tools). Not all of them are free and not all of them run on Linux. We chose
 [Navicat Data Modeler](https://www.navicat.com/en/products/navicat-data-modeler) it is free and runs on Linux, but which essentials version is quite limited.
@@ -680,7 +680,7 @@ Create a new logical diagram, also known as an [Entity-Relationship Diagram](htt
 
 | Frag History Entity Design                            | Match Statistics Entity Design                              |
 | ----------------------------------------------------- | ----------------------------------------------------------- |
-| ![](farcry_erd_entity_match_frag_edition_initial.png) | ![](farcry_erd_entity_match_statistics_edition_initial.png) |
+| ![](assets/farcry_erd_entity_match_frag_edition_initial.png) | ![](assets/farcry_erd_entity_match_statistics_edition_initial.png) |
 
 _Note 1: We prefer to use our own abstract data type `datetime`, `string`, `integer`, and `decimal`, rather than the data types the application Navicat suggests, which seem more specific to a particular RDBMS._
 
@@ -698,13 +698,13 @@ We need to add a new entity `match` with the following attributes:
 - `game_mode`: the multiplayer mode that was played;
 - `map_name`: the name of the map that was played.
 
-![Match Entity Edition](farcry_erd_entity_match.png)
+![Match Entity Edition](assets/farcry_erd_entity_match.png)
 
 Where does this match identifier come from?! The Far Cry engine doesn't log any game session identifier! This is a detail of implementation that we will solve later with the physical data model.
 
 For now, simply create this entity `match` as follows:
 
-![Entity Match Design](farcry_erd_entity_match_edition.png)
+![Entity Match Design](assets/farcry_erd_entity_match_edition.png)
 
 # Waypoint 17: Add Match Identifier to Match Frag Entity
 
@@ -724,7 +724,7 @@ We use the naming convention `fk_(entity_name)_(attribute_name)`, where `entity_
 
 | Relationship Edition                                                                                | Relationship Diagram                                                                        |
 | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| ![Entities Relationship Edition](farcry_erd_entities_match_and_match_frag_relationship_edition.png) | ![Entities Relationship Diagram](farcry_erd_entities_match_and_match_frag_relationship.png) |
+| ![Entities Relationship Edition](assets/farcry_erd_entities_match_and_match_frag_relationship_edition.png) | ![Entities Relationship Diagram](assets/farcry_erd_entities_match_and_match_frag_relationship.png) |
 
 Solid lines that connect attributes show the relationships of entities in the diagram.
 
@@ -736,7 +736,7 @@ _Ordinality_ describes the relationship as either mandatory or optional. It is t
 
 [Cardinality and ordinality](https://www.youtube.com/watch?v=QpdhBUYk7Kk) are shown by the styling of a line and its endpoint, according to a notation style such as the [Crow's foot notation](https://www.vertabelo.com/blog/technical-articles/crow-s-foot-notation):
 
-![ERD Cardinality Notation](erd_cardinality_notation.jpg)
+![ERD Cardinality Notation](assets/erd_cardinality_notation.jpg)
 
 Let's consider match and frag entities:
 
@@ -745,7 +745,7 @@ Let's consider match and frag entities:
 
 Select the solid line that represents the relationship between the two entities `match` and `match_frag`, and edit the cardinality of their endpoints.
 
-![Entity Cardinality Edition](farcry_erd_entities_match_and_match_frag_cardinality_edition.png)
+![Entity Cardinality Edition](assets/farcry_erd_entities_match_and_match_frag_cardinality_edition.png)
 
 # Waypoint 20: Add Match Statistics and Match Entities Relationship
 
@@ -753,13 +753,13 @@ Repeat the same modifications for the entity `match_statistics` that also refere
 
 The final database diagram should looks like the following:
 
-![Entity Relationship Diagram Final](farcry_erd_final.png)
+![Entity Relationship Diagram Final](assets/farcry_erd_final.png)
 
 We have completed the design of our Far Cry data model! Entity-relationship diagrams are very important in the documentation of an information system. You should always start designing the data model of the information system you want to implement, instead of directly creating database objects in your RDBMS.
 
 ---
 
-![](farcry_wallpaper_03.jpg)
+![](assets/farcry_wallpaper_03.jpg)
 
 We should convert the logical data model to a physical data model for a given RDBMS. This physical data model can be used to generate [DDL statements](https://en.wikipedia.org/wiki/Data_definition_language) which can then be deployed to a database server.
 
@@ -779,7 +779,7 @@ Run this tool and create a new database `farcry`. Then create a table `match` an
 
 [SQLite does not have a storage class set aside for storing dates and/or times](https://www.sqlite.org/datatype3.html#date_and_time_datatype). We are using the data type `TEXT` for storing date and time as [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) strings. SQLite supports built-in [date and time functions](https://www.sqlite.org/lang_datefunc.html) to manipulate ISO 8601 strings.
 
-![SQLite Table Match](farcry_sqlite_table_match_edition.png)
+![SQLite Table Match](assets/farcry_sqlite_table_match_edition.png)
 
 The DB Browser for the SQLite program application automatically generates the [DDL (Data Definition Language)](https://en.wikipedia.org/wiki/Data_definition_language) statement [`CREATE TABLE`](https://www.sqlite.org/lang_createtable.html), which is displayed below the list of columns, to create the table `match` in the SQLite database, when you click on the `OK` button.
 
@@ -795,7 +795,7 @@ Modify the table `match` to indicate that the column `match_id` is an auto-incre
 
 Create the tables `match_frag` and `match_statistics` with their corresponding columns:
 
-![Far Cry SQLite Database Structure](farcry_sqlite_database_structure_initial.png)
+![Far Cry SQLite Database Structure](assets/farcry_sqlite_database_structure_initial.png)
 
 # Waypoint 24: Create Primary and Foreign Keys
 
@@ -810,7 +810,7 @@ We would like to ensure the following [actions](https://www.sqlite.org/foreignke
 - If the identifier of a match (record) is updated in the parent table `match`, then this change must be propagated to the child tables `match_frag` and `match_statistics`;
 - A match cannot be deleted from the parent table `match` if there are frags linked to this match.
 
-![Table Match Frag Foreign Key Edition](farcry_sqlite_table_match_frag_foreign_key_edition.png)
+![Table Match Frag Foreign Key Edition](assets/farcry_sqlite_table_match_frag_foreign_key_edition.png)
 
 # Waypoint 25: Insert Game Session Data into SQLite
 
@@ -853,7 +853,7 @@ The function `insert_match_to_sqlite` returns the identifier of the match that h
 1
 ```
 
-![Table Match Data Browsing](farcry_sqllite_table_match_data_browsing.png)
+![Table Match Data Browsing](assets/farcry_sqllite_table_match_data_browsing.png)
 
 **WARNING**: You might find that your current implementation of the function `insert_match_to_sqlite` doesn't actually persist the data you have inserted into the database, while everything seems perfect, no error is raised. This is related to [transaction](http://db4beginners.com/blog/relationaldb-transaction/), one of the most fundamental concepts of relational database. Without going into details, a [transaction](https://en.wikipedia.org/wiki/Database_transaction) is used to execute several SQL statements and to commit or rollback all the changes made by these statements during this transaction: either the transaction succeeds and all updates take effect, otherwise, all the changes are cancelled.
 
@@ -873,7 +873,7 @@ The function `insert_frags_to_sqlite` [inserts new records](https://docs.python.
 
 Integrate this function in the function `insert_match_to_sqlite`.
 
-![Tabe Match Frag Data Browsing](farcry_sqllite_table_match_frag_data_browsing.png)
+![Tabe Match Frag Data Browsing](assets/farcry_sqllite_table_match_frag_data_browsing.png)
 
 ---
 
@@ -883,7 +883,7 @@ We are going to use the [Data Manipulation Language (DML)](https://en.wikipedia.
 
 We are not going to use any visual tools for this, but the [simple command-line inteface (CLI) program named sqlite3](https://sqlite.org/cli.html). We are nerds, aren't we ... ?
 
-![SQLite CLI](farcry_sqlite_cli_introduction.png)
+![SQLite CLI](assets/farcry_sqlite_cli_introduction.png)
 
 You can change [SQLite's output format](https://sqlite.org/cli.html#changing_output_formats) with the commands `.column` and `.header`.
 
@@ -1499,7 +1499,7 @@ SQLite doesn't support materialized views. Let's move to [PostgreSQL](https://ww
 
 ---
 
-![](farcry_wallpaper_05.jpg)
+![](assets/farcry_wallpaper_05.jpg)
 
 # Waypoint 46: Create PostgreSQL Database
 
@@ -1644,7 +1644,7 @@ _Note: [PostgreSQL recommends not to use `lastrowid`](http://initd.org/psycopg/d
 
 The most versatile killer is a player who killed others with a maximum number of different weapons.
 
-![Versatile Killer](farcry_statistics_versatile_killer.jpg)
+![Versatile Killer](assets/farcry_statistics_versatile_killer.jpg)
 
 Write a SQL query that sorts players by the descending number of different weapons they have used to kill other players in a match.
 
@@ -1854,10 +1854,10 @@ The class of a player is determined by the weapon he used the most to kill other
 
 |                                                 | Class      | Weapons                                                                                                                                                                                 |
 | ----------------------------------------------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![Hitman](farcry_class_hitman.png)              | Hitman     | `Machete`, `Falcon`, `MP5`                                                                                                                                                              |
-| ![Sniper](farcry_class_sniper.png)              | Sniper     | `SniperRifle`                                                                                                                                                                           |
-| ![Commando](farcry_class_commando.jpg)          | Commando   | `AG36`, `OICW`, `P90`, `M4`, `Shotgun`, `M249`                                                                                                                                          |
-| ![Psychotic Killer](farcry_class_psychotic.jpg) | Psychopath | `Rocket`, `VehicleRocket`, `HandGrenade`, `StickExplosive`, `Boat`, `Vehicle`, `VehicleMountedRocketMG`, `VehicleMountedAutoMG`, `MG`, `VehicleMountedMG`, `OICWGrenade`, `AG36Grenade` |
+| ![Hitman](assets/farcry_class_hitman.png)              | Hitman     | `Machete`, `Falcon`, `MP5`                                                                                                                                                              |
+| ![Sniper](assets/farcry_class_sniper.png)              | Sniper     | `SniperRifle`                                                                                                                                                                           |
+| ![Commando](assets/farcry_class_commando.jpg)          | Commando   | `AG36`, `OICW`, `P90`, `M4`, `Shotgun`, `M249`                                                                                                                                          |
+| ![Psychotic Killer](assets/farcry_class_psychotic.jpg) | Psychopath | `Rocket`, `VehicleRocket`, `HandGrenade`, `StickExplosive`, `Boat`, `Vehicle`, `VehicleMountedRocketMG`, `VehicleMountedAutoMG`, `MG`, `VehicleMountedMG`, `OICWGrenade`, `AG36Grenade` |
 
 In the following example, the player `lythanhphu` killed most of his victims with a rocket mounted on a boat (`VehicleRocket`). He is definitively a `Psychopath`. The player `shogun` is more a `Commando`. The player `Transporter` is more a `Hitman`.
 
@@ -1970,7 +1970,7 @@ For example:
 
 A serial killer is a player who killed several players before being killed or until the match ended.
 
-![Serial Killer](farcry_statistics_serial_killer.jpg)
+![Serial Killer](assets/farcry_statistics_serial_killer.jpg)
 
 Write a Python function `calculate_serial_killers` that takes an argument `frags` and returns a dictionary of killers with their longest kill series, where the key corresponds to the name of a player and the value corresponds to a list of frag times of the player's longest series:
 
@@ -2032,7 +2032,7 @@ For example:
 
 A serial looser is a player who has been killed (or committed suicides) several times before being able to kill someone or until the match ended.
 
-![Serial Loser](farcry_statistics_serial_loser.png)
+![Serial Loser](assets/farcry_statistics_serial_loser.png)
 
 Write a Python function `calculate_serial_losers` that takes an argument `frags` and returns a dictionary of players (victims) with their longest death series, where the key corresponds to the name of a player and the value corresponds to a list of frag times of the player's longest series:
 
@@ -2112,7 +2112,7 @@ For example:
 
 A Lucky Luke Killer is a player who killed several other players in less than `N` seconds between each consecutive kill.
 
-![Lucky Luke Killer](farcry_statistics_lucky_luke_killer.jpg)
+![Lucky Luke Killer](assets/farcry_statistics_lucky_luke_killer.jpg)
 
 Write a [SQL function](https://www.postgresql.org/docs/current/xfunc-sql.html) `calculate_lucky_luke_killers` that takes the following arguments:
 
