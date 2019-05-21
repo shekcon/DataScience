@@ -2,7 +2,8 @@
 from datetime import datetime, timedelta, timezone
 from re import findall, split
 import csv
-import sqlite3
+from sqlite3 import connect as connect_sqlite
+from psycopg2 import Error, connect as connect_psql
 
 
 def read_log_file(log_file_pathname):
@@ -220,7 +221,7 @@ def create_connection(db_file):
     :return: Connection object or None
     """
     try:
-        conn = sqlite3.connect(db_file)
+        conn = connect_sqlite(db_file)
         return conn
     except Error as e:
         print(e)
@@ -240,11 +241,35 @@ def insert_frags_to_sqlite(connection, match_id, frags):
             c.execute(sql_suicide, frag)
 
 
+def insert_match_to_postgresql(properties, start_time, end_game, game_mode, map_name, frags):
+    hostname, database_name, username, password = properties
+    connection = connect_psql(user=username,
+                                password=password,
+                                host=hostname,
+                                database=database_name)
+    with connection:
+        cursor = connection.cursor()
+        sql_match = """INSERT INTO match(start_time, end_time, game_mode, map_name) VALUES(%s,%s,%s,%s) RETURNING match_id;"""
+        cursor.execute(sql_match, (start_time, end_time, game_mode, map_name))
+        lastrowid = cursor.fetchone()[0]
+        sql_killer_victim = "INSERT INTO match_frag(match_id, frag_time, killer_name, victim_name, weapon_code) VALUES(%s,%s,%s,%s,%s);"
+        sql_suicide = """INSERT INTO match_frag(match_id,frag_time, killer_name) VALUES(%s,%s,%s);"""
+        for frag in frags:
+            if len(frag) > 2:
+                cursor.execute(sql_killer_victim, (lastrowid, *frag))
+            else:
+                cursor.execute(sql_suicide, (lastrowid, *frag))
+        connection.commit()
+    return lastrowid
+
+
 if __name__ == "__main__":
     log_data = read_log_file('./logs/log04.txt')
     log_start_time = parse_log_start_time(log_data)
     frags = parse_frags(log_data)
     game_mode, map_name = parse_session_mode_and_map(log_data)
     start_time, end_time = parse_game_session_start_and_end_times(log_data)
-    insert_match_to_sqlite('./db/farcry', start_time,
-                           end_time, game_mode, map_name, frags)
+    properties = ('127.0.0.1', 'farcry', 'postgres', '123456')
+    id = insert_match_to_postgresql(properties, start_time,
+                               end_time, game_mode, map_name, frags)
+    print(id)
