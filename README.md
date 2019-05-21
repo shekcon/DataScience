@@ -1,6 +1,6 @@
 # Far Cry
 
-![Far Cry Wallpaper](farcry_wallpaper_introduction.jpg)
+![Far Cry Wallpaper](assets/farcry_wallpaper_introduction.jpg)
 
 ## Introduction
 
