@@ -244,9 +244,9 @@ def insert_frags_to_sqlite(connection, match_id, frags):
 def insert_match_to_postgresql(properties, start_time, end_game, game_mode, map_name, frags):
     hostname, database_name, username, password = properties
     connection = connect_psql(user=username,
-                                password=password,
-                                host=hostname,
-                                database=database_name)
+                              password=password,
+                              host=hostname,
+                              database=database_name)
     with connection:
         cursor = connection.cursor()
         sql_match = """INSERT INTO match(start_time, end_time, game_mode, map_name) VALUES(%s,%s,%s,%s) RETURNING match_id;"""
@@ -263,27 +263,31 @@ def insert_match_to_postgresql(properties, start_time, end_game, game_mode, map_
     return lastrowid
 
 
-def  calculate_serial_killers(frags):
+def calculate_serial_killers(frags):
     serial_killer = {}
     for frag in frags:
-        frag_time, killer_name, victim_name, weapon_code = frag if len(frag) > 2 else (*frag, None, None)
+        frag_time, killer_name, victim_name, weapon_code = frag if len(
+            frag) > 2 else (*frag, None, None)
         if not victim_name:
             serial_killer.setdefault(killer_name, []).append([])
         else:
-            serial_killer.setdefault(killer_name, [[]])[-1].append((frag_time, victim_name, weapon_code))
+            serial_killer.setdefault(
+                killer_name, [[]])[-1].append((frag_time, victim_name, weapon_code))
             serial_killer.setdefault(victim_name, []).append([])
     for k, v in serial_killer.items():
         serial_killer[k] = max(v, key=len)
     return serial_killer
-        
+
 
 def calculate_serial_losers(frags):
     serial_losers = {}
     for frag in frags:
-        frag_time, killer_name, victim_name, weapon_code = frag if len(frag) > 2 else (*frag, None, None)
+        frag_time, killer_name, victim_name, weapon_code = frag if len(
+            frag) > 2 else (*frag, None, None)
         if killer_name and victim_name:
             serial_losers.setdefault(killer_name, []).append([])
-            serial_losers.setdefault(victim_name, [[]])[-1].append((frag_time, killer_name, weapon_code))
+            serial_losers.setdefault(
+                victim_name, [[]])[-1].append((frag_time, killer_name, weapon_code))
         else:
             serial_losers.setdefault(killer_name, [])[-1].append(frag)
     for k, v in serial_losers.items():
@@ -298,4 +302,4 @@ if __name__ == "__main__":
     for player_name, kill_series in serial_killers.items():
         print('[%s]' % player_name)
         print('\n'.join([', '.join(([str(e) for e in kill]))
-            for kill in kill_series]))
+                         for kill in kill_series]))
