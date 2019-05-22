@@ -263,13 +263,39 @@ def insert_match_to_postgresql(properties, start_time, end_game, game_mode, map_
     return lastrowid
 
 
+def  calculate_serial_killers(frags):
+    serial_killer = {}
+    for frag in frags:
+        frag_time, killer_name, victim_name, weapon_code = frag if len(frag) > 2 else (*frag, None, None)
+        if not victim_name:
+            serial_killer.setdefault(killer_name, []).append([])
+        else:
+            serial_killer.setdefault(killer_name, [[]])[-1].append((frag_time, victim_name, weapon_code))
+            serial_killer.setdefault(victim_name, []).append([])
+    for k, v in serial_killer.items():
+        serial_killer[k] = max(v, key=len)
+    return serial_killer
+        
+
+def calculate_serial_losers(frags):
+    serial_losers = {}
+    for frag in frags:
+        frag_time, killer_name, victim_name, weapon_code = frag if len(frag) > 2 else (*frag, None, None)
+        if killer_name and victim_name:
+            serial_losers.setdefault(killer_name, []).append([])
+            serial_losers.setdefault(victim_name, [[]])[-1].append((frag_time, killer_name, weapon_code))
+        else:
+            serial_losers.setdefault(killer_name, [])[-1].append(frag)
+    for k, v in serial_losers.items():
+        serial_losers[k] = max(v, key=len)
+    return serial_losers
+
+
 if __name__ == "__main__":
-    log_data = read_log_file('./logs/log04.txt')
-    log_start_time = parse_log_start_time(log_data)
+    log_data = read_log_file('./logs/log08.txt')
     frags = parse_frags(log_data)
-    game_mode, map_name = parse_session_mode_and_map(log_data)
-    start_time, end_time = parse_game_session_start_and_end_times(log_data)
-    properties = ('127.0.0.1', 'farcry', 'postgres', '123456')
-    id = insert_match_to_postgresql(properties, start_time,
-                               end_time, game_mode, map_name, frags)
-    print(id)
+    serial_killers = calculate_serial_losers(frags)
+    for player_name, kill_series in serial_killers.items():
+        print('[%s]' % player_name)
+        print('\n'.join([', '.join(([str(e) for e in kill]))
+            for kill in kill_series]))
